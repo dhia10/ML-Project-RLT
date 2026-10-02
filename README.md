@@ -1,15 +1,15 @@
-# 🌲 RLT Extra Trees: Étude Comparative Complète
+# Étude Comparative des Arbres de Décision : Reinforcement Learning Trees (RLT) vs Modèles d'Ensemble
 ## Reinforcement Learning Trees - Analyse Multi-Modèles
 
 **Author:** Dhia Romdhane  
 **Date:** December 2025  
-**Repository:** https://github.com/yosriawedi/ML-Project-RLT
+**Repository:** https://github.com/dhia10/ML-Project-RLT
 
 ---
 
-## 🚀 Quick Start - Utilisez le Notebook Directement!
+## Quick Start - Utilisez le Notebook Directement!
 
-### **Option 1: Jupyter Notebook (.ipynb) - RECOMMANDÉ** ⭐
+### **Option 1: Jupyter Notebook (.ipynb) - RECOMMANDÉ** 
 
 Le moyen le plus simple! Ouvrez directement dans Google Colab:
 
@@ -18,16 +18,16 @@ Le moyen le plus simple! Ouvrez directement dans Google Colab:
 3. **Sélectionnez:** `RLT_Comparative_Study.ipynb`
 4. **Exécutez cellule par cellule** (Shift+Enter)
 5. **Uploadez votre CSV** quand demandé
-6. **C'est tout!** 🎉
+6. **C'est tout!** 
 
 **OU depuis GitHub:**
 1. Cliquez sur `RLT_Comparative_Study.ipynb` dans le repo
 2. Cliquez sur "Open in Colab" 
 3. Exécutez!
 
-✅ **14 cellules pré-configurées**  
-✅ **Pas besoin de copier-coller**  
-✅ **Prêt à l'emploi**
+ **14 cellules pré-configurées**  
+ **Pas besoin de copier-coller**  
+ **Prêt à l'emploi**
 
 ### **Option 2: Script Python (.py)**
 
@@ -35,7 +35,7 @@ Pour usage avancé ou local. Voir `RLT_Complete_Analysis.py`
 
 ---
 
-## 🎯 Objectif
+## Objectif
 
 Comparer **RLT-ExtraTrees** (Reinforcement Learning Trees) contre 7 autres modèles de référence sur n'importe quel dataset uploadé.
 
@@ -52,7 +52,7 @@ Comparer **RLT-ExtraTrees** (Reinforcement Learning Trees) contre 7 autres modè
 
 ---
 
-## 📊 Méthodologie
+## Méthodologie
 
 ### CRISP-DM (Cross-Industry Standard Process for Data Mining)
 
@@ -87,9 +87,9 @@ VI_STAT_WEIGHT = 0.5
 
 ---
 
-## 📝 Fichiers du Projet
+## Fichiers du Projet
 
-### 1. **RLT_Comparative_Study.ipynb** ⭐
+### 1. **RLT_Comparative_Study.ipynb** 
    - Jupyter Notebook prêt à l'emploi
    - 14 cellules pré-configurées
    - Ouvrez directement dans Colab
@@ -109,7 +109,7 @@ VI_STAT_WEIGHT = 0.5
 
 ---
 
-## 📁 Format de Dataset Attendu
+## Format de Dataset Attendu
 
 ### Structure du CSV:
 
@@ -122,11 +122,11 @@ feature1, feature2, feature3, ..., target
 
 ### Règles:
 
-- ✅ **Format**: CSV avec header
-- ✅ **Dernière colonne**: Target (variable à prédire)
-- ✅ **Autres colonnes**: Features
-- ✅ **Valeurs manquantes**: Acceptées (seront traitées automatiquement)
-- ✅ **Variables catégorielles**: Acceptées (seront encodées)
+-  **Format**: CSV avec header
+-  **Dernière colonne**: Target (variable à prédire)
+-  **Autres colonnes**: Features
+-  **Valeurs manquantes**: Acceptées (seront traitées automatiquement)
+-  **Variables catégorielles**: Acceptées (seront encodées)
 
 ### Exemples de datasets compatibles:
 
@@ -140,7 +140,7 @@ feature1, feature2, feature3, ..., target
 
 ---
 
-## 📊 Ce Que Vous Obtenez
+## Ce Que Vous Obtenez
 
 ### 1. Data Understanding (EDA)
 
@@ -188,14 +188,14 @@ feature1, feature2, feature3, ..., target
 
 ---
 
-## 🎯 Exemple de Sortie
+## Exemple de Sortie
 
 ```
 =============================================================================
-📊 COMPARAISON ANALYTIQUE DES RÉSULTATS
+ COMPARAISON ANALYTIQUE DES RÉSULTATS
 =============================================================================
 
-📋 Tableau Complet des Résultats:
+ Tableau Complet des Résultats:
 
 Model              Features  Train_Accuracy  Test_Accuracy  Precision  Recall  F1_Score  Train_Time
 -----------------  --------  --------------  -------------  ---------  ------  --------  ----------
@@ -208,48 +208,48 @@ Model              Features  Train_Accuracy  Test_Accuracy  Precision  Recall  F
 7. XGBoost         25        0.9901          0.9512         0.9507     0.9512  0.9509    4.23
 8. AdaBoost        25        0.9234          0.8987         0.8982     0.8987  0.8984    2.67
 
-🏆 MEILLEUR MODÈLE:
+ MEILLEUR MODÈLE:
    - Nom: 1. RLT-ExtraTrees
    - Test Accuracy: 0.9543
    - Features: 15 (40% réduction!)
    - Temps: 2.34s
 
-🌲 RLT-ExtraTrees:
+ RLT-ExtraTrees:
    - Position: #1 / 8
    - Test Accuracy: 0.9543
 
-🔍 ANALYSE RLT:
-   ✅ RLT est MEILLEUR que les autres modèles
-   📈 Amélioration: +0.59%
-   🚀 Avec 40% moins de features!
+ ANALYSE RLT:
+    RLT est MEILLEUR que les autres modèles
+    Amélioration: +0.59%
+    Avec 40% moins de features!
 
-💡 CONCLUSION:
+ CONCLUSION:
    RLT-ExtraTrees obtient les meilleures performances avec 0.9543
    et utilise seulement 15/25 features (60% des features originales)
 ```
 
 ---
 
-## 📈 Interprétation des Résultats
+## Interprétation des Résultats
 
 ### Si RLT Gagne:
 
-✅ **RLT est efficace** pour ce dataset  
-✅ **Variable Importance** a bien identifié les features importantes  
-✅ **Variable Muting** a éliminé le bruit sans perdre d'information  
-✅ **Réduction de features** = Modèle plus rapide et interprétable
+ **RLT est efficace** pour ce dataset  
+ **Variable Importance** a bien identifié les features importantes  
+ **Variable Muting** a éliminé le bruit sans perdre d'information  
+ **Réduction de features** = Modèle plus rapide et interprétable
 
 ### Si RLT Perd:
 
-⚠️ **Toutes les features sont importantes** - pas de bruit à éliminer  
-⚠️ **Dataset trop petit** - VI pas assez fiable  
-⚠️ **Features faiblement corrélées** - Muting trop agressif  
+ **Toutes les features sont importantes** - pas de bruit à éliminer  
+ **Dataset trop petit** - VI pas assez fiable  
+ **Features faiblement corrélées** - Muting trop agressif  
 
 → Essayez d'ajuster `VI_THRESHOLD` (actuellement 0.01)
 
 ---
 
-## ⚙️ Personnalisation
+## Personnalisation
 
 Vous pouvez modifier les hyperparamètres dans **CELLULE 3**:
 
@@ -270,7 +270,7 @@ TEST_SIZE = 0.2  # 20% test, 80% train
 
 ---
 
-## 🔧 Dépendances
+## Dépendances
 
 Toutes installées automatiquement dans Colab:
 
@@ -286,7 +286,7 @@ scipy
 
 ---
 
-## 📚 Références
+## Références
 
 1. **Zhu, R., Zeng, D., & Kosorok, M. R. (2015)**  
    "Reinforcement Learning Trees"  
@@ -301,33 +301,33 @@ scipy
 
 ---
 
-## 📞 Contact
+## Contact
 
 **Author:** Dhia Romdhane  
-**Repository:** https://github.com/yosriawedi/ML-Project-RLT  
-**Issues:** https://github.com/yosriawedi/ML-Project-RLT/issues
+**Repository:** https://github.com/dhia10/ML-Project-RLT  
+**Issues:** https://github.com/dhia10/ML-Project-RLT/issues
 
 ---
 
-## 📝 License
+## License
 
 Ce projet est à usage académique.
 
 ---
 
-## 🎉 Changelog
+## Changelog
 
 ### Version 1.0 (December 2025)
-- ✅ Upload de dataset CSV
-- ✅ Data Understanding (CRISP-DM)
-- ✅ Data Preparation (CRISP-DM)
-- ✅ RLT Variable Importance (Extra Trees + Statistical)
-- ✅ 8 modèles comparés
-- ✅ Hyperparamètres fixes
-- ✅ Comparaison analytique complète
-- ✅ Visualisations
-- ✅ Sauvegarde résultats CSV
+-  Upload de dataset CSV
+-  Data Understanding (CRISP-DM)
+-  Data Preparation (CRISP-DM)
+-  RLT Variable Importance (Extra Trees + Statistical)
+-  8 modèles comparés
+-  Hyperparamètres fixes
+-  Comparaison analytique complète
+-  Visualisations
+-  Sauvegarde résultats CSV
 
 ---
 
-**🚀 Prêt à commencer? Uploadez votre dataset et lancez l'analyse!**
+** Prêt à commencer? Uploadez votre dataset et lancez l'analyse!**
