@@ -304,7 +304,6 @@ scipy
 ## Contact
 
 **Author:** Dhia Romdhane  
-**LinkedIn:** https://www.linkedin.com/in/dhia-romdhane-ds/  
 **Repository:** https://github.com/dhia10/ML-Project-RLT  
 **Issues:** https://github.com/dhia10/ML-Project-RLT/issues
 
